@@ -34,20 +34,21 @@ var NAVTREE =
     ] ],
     [ "How to create documentation for this project", "md__c___users__jorge__documents__git_hub__r_s__trab2_documentation__creating__documentation.html", null ],
     [ "RS-Trab2", "md__c___users__jorge__documents__git_hub__r_s__trab2__r_e_a_d_m_e.html", [
-      [ "Ancient encryption systems", "md__c___users__jorge__documents__git_hub__r_s__trab2__r_e_a_d_m_e.html#autotoc_md10", null ]
+      [ "Ancient encryption systems", "md__c___users__jorge__documents__git_hub__r_s__trab2__r_e_a_d_m_e.html#autotoc_md10", null ],
+      [ "Documentation", "md__c___users__jorge__documents__git_hub__r_s__trab2__r_e_a_d_m_e.html#autotoc_md11", null ]
     ] ],
     [ "** Trabalho executado, passo a passo **", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html", [
-      [ "Desenvolvimento da função para encriptar", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md12", null ],
-      [ "Criação de um ramo para desencriptar", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md13", [
-        [ "teste do desencriptar", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md14", null ],
-        [ "correção do erro", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md15", null ]
+      [ "Desenvolvimento da função para encriptar", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md13", null ],
+      [ "Criação de um ramo para desencriptar", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md14", [
+        [ "teste do desencriptar", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md15", null ],
+        [ "correção do erro", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md16", null ]
       ] ],
-      [ "Entretanto, no ramo principal", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md16", null ],
-      [ "Fusão dos 2 ramos", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md17", null ],
-      [ "Actualização do README", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md18", null ],
-      [ "Imagens", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md19", null ],
-      [ "** Mudar o nome a um repositório remoto **", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md20", null ],
-      [ "** Criar a documentação **", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md21", null ]
+      [ "Entretanto, no ramo principal", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md17", null ],
+      [ "Fusão dos 2 ramos", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md18", null ],
+      [ "Actualização do README", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md19", null ],
+      [ "Imagens", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md20", null ],
+      [ "** Mudar o nome a um repositório remoto **", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md21", null ],
+      [ "** Criar a documentação **", "md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html#autotoc_md22", null ]
     ] ],
     [ "List of tests", "md__c___users__jorge__documents__git_hub__r_s__trab2_test__test_list.html", null ],
     [ "Files", "files.html", [
