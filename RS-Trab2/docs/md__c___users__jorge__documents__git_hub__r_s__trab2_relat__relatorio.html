@@ -86,36 +86,36 @@ $(document).ready(function(){initNavTree('md__c___users__jorge__documents__git_h
   <div class="headertitle"><div class="title">** Trabalho executado, passo a passo ** </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md11"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md12"></a>
 Desenvolvimento da função para encriptar</h1>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Criação de um ramo para desencriptar</h1>
 <blockquote class="doxtable">
 <p >&zwj;desenvolvimento em paralelo com o ramo principal, onde está a função para <b>encriptar</b> </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 teste do desencriptar</h2>
 <blockquote class="doxtable">
 <p >&zwj;Foi encontrado um <em><b>erro</b></em> </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 correção do erro</h2>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Entretanto, no ramo principal</h1>
 <blockquote class="doxtable">
 <p >&zwj;foram acrescentados ao <b>gitignore</b>, 2 ficheiros específicos do <b>DevC++</b> </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Fusão dos 2 ramos</h1>
 <blockquote class="doxtable">
 <p >&zwj;O programa ficou completo com as funções para <b>encriptar</b> e <b>desencriptar</b> </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Actualização do README</h1>
 <blockquote class="doxtable">
 <p >&zwj;Completar a descrição do projecto </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Imagens</h1>
 <ol type="1">
 <li>fusão dos dois ramos <img src="images/Merge_decrypt.JPG" alt="fusão dos ramos" class="inline"/></li>
@@ -124,7 +124,7 @@ Imagens</h1>
 <li>sequência em modo resumo com tags <img src="images/logResumoTag.JPG" alt="Produto final - resumo com tags" class="inline"/></li>
 <li>resumo com instalação do LFS <img src="images/logResumoLFS.JPG" alt="Produto final - resumo com LFS" class="inline"/></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 ** Mudar o nome a um repositório remoto **</h1>
 <blockquote class="doxtable">
 <p >&zwj;Esta sequência de ações muda automaticamente todos os links que associam o repositório local ao remoto </p>
@@ -141,12 +141,40 @@ Imagens</h1>
 <li>mudar o nome da pasta normalmente</li>
 <li>abrir o cliente Github para Windows<ul>
 <li>surge a mensagem a informar que não foi encontrada a pasta local relativa ao repositório remoto</li>
-<li>escolher a pasta com o novo nome </li>
+<li>escolher a pasta com o novo nome</li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
+<h1><a class="anchor" id="autotoc_md21"></a>
+** Criar a documentação **</h1>
+<blockquote class="doxtable">
+<p >&zwj;Foi usado o <b>Doxygen</b> para documentar o projecto. </p><blockquote class="doxtable">
+<p >&zwj;Mudaram-se os comentários no código para respeitarem os requisitos do Doxygen. <br  />
+ <b>Problema:</b> As imagens não apareciam na documentação. <br  />
+ <b>Solução:</b> Até ao dia 31.12.2021, não foi possível encontrar uma solução. <br  />
+ Em 31.12.2021 saiu uma correção do <b>Doxygen</b> para esse problema. <br  />
+ Com o novo <b>Doxigen</b> foi necessário criar uma pasta com a duplicação das imagens. <br  />
+ <b>NOTA:</b> A interface gráfica do novo <b>Doxygen</b> não funciona, o que ainda tornou o processo mais difícil. <br  />
+ </p>
+</blockquote>
+<p>Estudou-se o <b>GitHub Pages</b> para publicação da documentação.</p>
+<p >Foi criado um novo repositório para se poder publicar.</p>
+<p >Instalou-se o <b>gitLFS</b>. <br  />
+ </p><blockquote class="doxtable">
+<p >&zwj;<b>Problema:</b> As imagens aparecem no repositório local, mas não no remoto (Pages). <br  />
+ <b>Solução:</b> Após várias tentativas, concluiu-se que não se pode usar o gitLFS. <br  />
+</p>
+<p ><b>Problema:</b> O código comentado aparece no repositório local, mas não no remoto (Pages). <br  />
+ <b>Solução:</b> Foi bastante mais complicado de resolver. Ao navegar no site, aparecia o erro "**404: File not Found**" sempre que se tentava aceder ao código comentado. O mais estranho era que o ficheiro efectivamente estava no local certo do repositório. Ao explorar o processo, verificou-se que há um <b>Bot</b> que é executado sempre que se faz push no repositório. Esse <b>Bot</b> chama uma aplicação (<b>Jekill</b>) para criar as páginas <b>html</b>. <br  />
+ O <b>Doxygen</b> coloca o caracter "**_**" do início do nome de alguns ficheiros. <br  />
+ Por seu lado, o <b>Jekill</b> remove-o. <br  />
+ Desta forma, os nomes estavam correctos no repositório, mas incorrectos no site. <br  />
+ A solução é impedir o <b>Bot</b> de executar o <b>Jekill</b>, publicando o site sem qualquer processamento adicional. <br  />
+ Para isso basta adicionar um ficheiro vazio "**.noJekill**" na raiz do repositório. </p>
+</blockquote>
+</blockquote>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
