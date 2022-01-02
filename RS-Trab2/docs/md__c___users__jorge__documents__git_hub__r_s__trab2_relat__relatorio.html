@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -51,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md__c___users__jorge__documents__git_hub__r_s__trab2_relat__relatorio.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -82,40 +61,41 @@ $(document).ready(function(){initNavTree('md__c___users__jorge__documents__git_h
 </iframe>
 </div>
 
+</div><!-- top -->
 <div><div class="header">
   <div class="headertitle"><div class="title">** Trabalho executado, passo a passo ** </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md13"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md16"></a>
 Desenvolvimento da função para encriptar</h1>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Criação de um ramo para desencriptar</h1>
 <blockquote class="doxtable">
 <p >&zwj;desenvolvimento em paralelo com o ramo principal, onde está a função para <b>encriptar</b> </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 teste do desencriptar</h2>
 <blockquote class="doxtable">
 <p >&zwj;Foi encontrado um <em><b>erro</b></em> </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 correção do erro</h2>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Entretanto, no ramo principal</h1>
 <blockquote class="doxtable">
 <p >&zwj;foram acrescentados ao <b>gitignore</b>, 2 ficheiros específicos do <b>DevC++</b> </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Fusão dos 2 ramos</h1>
 <blockquote class="doxtable">
 <p >&zwj;O programa ficou completo com as funções para <b>encriptar</b> e <b>desencriptar</b> </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Actualização do README</h1>
 <blockquote class="doxtable">
 <p >&zwj;Completar a descrição do projecto </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md20"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Imagens</h1>
 <ol type="1">
 <li>fusão dos dois ramos <img src="images/Merge_decrypt.JPG" alt="fusão dos ramos" class="inline"/></li>
@@ -124,7 +104,7 @@ Imagens</h1>
 <li>sequência em modo resumo com tags <img src="images/logResumoTag.JPG" alt="Produto final - resumo com tags" class="inline"/></li>
 <li>resumo com instalação do LFS <img src="images/logResumoLFS.JPG" alt="Produto final - resumo com LFS" class="inline"/></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md21"></a>
+<h1><a class="anchor" id="autotoc_md24"></a>
 ** Mudar o nome a um repositório remoto **</h1>
 <blockquote class="doxtable">
 <p >&zwj;Esta sequência de ações muda automaticamente todos os links que associam o repositório local ao remoto </p>
@@ -147,7 +127,7 @@ Imagens</h1>
 </ul>
 </li>
 </ol>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 ** Criar a documentação **</h1>
 <blockquote class="doxtable">
 <p >&zwj;Foi usado o <b>Doxygen</b> para documentar o projecto. </p><blockquote class="doxtable">
@@ -167,22 +147,19 @@ Imagens</h1>
  <b>Solução:</b> Após várias tentativas, concluiu-se que não se pode usar o gitLFS. <br  />
 </p>
 <p ><b>Problema:</b> O código comentado aparece no repositório local, mas não no remoto (Pages). <br  />
- <b>Solução:</b> Foi bastante mais complicado de resolver. Ao navegar no site, aparecia o erro <b>404: File not Found</b> sempre que se tentava aceder ao código comentado. O mais estranho era que o ficheiro efectivamente estava no local certo do repositório. Ao explorar o processo, verificou-se que há um <b>Bot</b> que é executado sempre que se faz push no repositório. Esse <b>Bot</b> chama uma aplicação (<b>Jekill</b>) para criar as páginas <b>html</b>. <br  />
+ <b>Solução:</b> Foi bastante mais complicado de resolver. Ao navegar no site, aparecia o erro <b>404: File not Found</b> sempre que se tentava aceder ao código comentado. O mais estranho era que o ficheiro efectivamente estava no local certo do repositório. Ao explorar o processo, verificou-se que há um <code>bot</code> que é executado sempre que se faz push no repositório. Esse <code>bot</code> chama uma aplicação (<b>Jekill</b>) para criar as páginas <code>html</code>. <br  />
  O <b>Doxygen</b> coloca o caracter "_" do início do nome de alguns ficheiros. <br  />
  Por seu lado, o <b>Jekill</b> remove-o. <br  />
  Desta forma, os nomes estavam correctos no repositório, mas incorrectos no site. <br  />
- A solução é impedir o <b>Bot</b> de executar o <b>Jekill</b>, publicando o site sem qualquer processamento adicional. <br  />
- Para isso basta adicionar um ficheiro vazio ".nojekill" na raiz do repositório. </p>
+ A solução é impedir o <code>bot</code> de executar o <b>Jekill</b>, publicando o site sem qualquer processamento adicional. <br  />
+ Para isso basta adicionar um ficheiro vazio <code>.nojekill</code> na raiz do repositório. </p>
 </blockquote>
 </blockquote>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
 </body>
 </html>
