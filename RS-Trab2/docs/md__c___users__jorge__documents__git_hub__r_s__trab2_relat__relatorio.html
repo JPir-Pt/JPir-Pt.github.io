@@ -167,12 +167,12 @@ Imagens</h1>
  <b>Solução:</b> Após várias tentativas, concluiu-se que não se pode usar o gitLFS. <br  />
 </p>
 <p ><b>Problema:</b> O código comentado aparece no repositório local, mas não no remoto (Pages). <br  />
- <b>Solução:</b> Foi bastante mais complicado de resolver. Ao navegar no site, aparecia o erro "**404: File not Found**" sempre que se tentava aceder ao código comentado. O mais estranho era que o ficheiro efectivamente estava no local certo do repositório. Ao explorar o processo, verificou-se que há um <b>Bot</b> que é executado sempre que se faz push no repositório. Esse <b>Bot</b> chama uma aplicação (<b>Jekill</b>) para criar as páginas <b>html</b>. <br  />
- O <b>Doxygen</b> coloca o caracter "**_**" do início do nome de alguns ficheiros. <br  />
+ <b>Solução:</b> Foi bastante mais complicado de resolver. Ao navegar no site, aparecia o erro <b>404: File not Found</b> sempre que se tentava aceder ao código comentado. O mais estranho era que o ficheiro efectivamente estava no local certo do repositório. Ao explorar o processo, verificou-se que há um <b>Bot</b> que é executado sempre que se faz push no repositório. Esse <b>Bot</b> chama uma aplicação (<b>Jekill</b>) para criar as páginas <b>html</b>. <br  />
+ O <b>Doxygen</b> coloca o caracter "_" do início do nome de alguns ficheiros. <br  />
  Por seu lado, o <b>Jekill</b> remove-o. <br  />
  Desta forma, os nomes estavam correctos no repositório, mas incorrectos no site. <br  />
  A solução é impedir o <b>Bot</b> de executar o <b>Jekill</b>, publicando o site sem qualquer processamento adicional. <br  />
- Para isso basta adicionar um ficheiro vazio ".**noJekill**" na raiz do repositório. </p>
+ Para isso basta adicionar um ficheiro vazio .**noJekill** na raiz do repositório. </p>
 </blockquote>
 </blockquote>
 </div></div><!-- contents -->
