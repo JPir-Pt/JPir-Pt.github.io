@@ -86,9 +86,9 @@ $(document).ready(function(){initNavTree('md__c___users__jorge__documents__git_h
   <div class="headertitle"><div class="title">List of tests </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><table class="markdownTable">
+<div class="textblock"><p >With the provided executable, <code><a class="el" href="_cyphers_8cpp.html#abced92daf1654f2fe0e8c7984a53bad1">CaesarEncrypt()</a></code> and <code><a class="el" href="_cyphers_8cpp.html#a595c323f1b7320f807747931df7f4214">CaesarDecrypt()</a></code> functions can be tested according to the folowing table: </p><table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Description   </th><th class="markdownTableHeadNone">Expected result   </th><th class="markdownTableHeadNone">Passed    </th></tr>
+<th class="markdownTableHeadNone">Test name   </th><th class="markdownTableHeadNone">Description   </th><th class="markdownTableHeadNone">Expected result   </th><th class="markdownTableHeadNone">Passed    </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Big Key   </td><td class="markdownTableBodyNone">Use a key greater than 25   </td><td class="markdownTableBodyNone">Wrap around (mod 26)   </td><td class="markdownTableBodyNone">[x]    </td></tr>
 <tr class="markdownTableRowEven">
@@ -100,10 +100,19 @@ $(document).ready(function(){initNavTree('md__c___users__jorge__documents__git_h
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Space D   </td><td class="markdownTableBodyNone">Decrypt a string with spaces   </td><td class="markdownTableBodyNone">string decripted   </td><td class="markdownTableBodyNone">[x]    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">UP/Down   </td><td class="markdownTableBodyNone">Encrypt/decript upper and lower case symbols   </td><td class="markdownTableBodyNone">correct encryption/decryption   </td><td class="markdownTableBodyNone">[x]    </td></tr>
+<td class="markdownTableBodyNone">UP/Down   </td><td class="markdownTableBodyNone">Encrypt/decript upper and lower case letters   </td><td class="markdownTableBodyNone">letter correctly encrypted or decrypted   </td><td class="markdownTableBodyNone">[x]    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Non alpha   </td><td class="markdownTableBodyNone">Encrypt/decrypt non alphabetic characters   </td><td class="markdownTableBodyNone">correct encryption/decryption   </td><td class="markdownTableBodyNone">[x]   </td></tr>
+<td class="markdownTableBodyNone">Non alpha   </td><td class="markdownTableBodyNone">Encrypt/decrypt non alphabetic characters   </td><td class="markdownTableBodyNone">character does not change   </td><td class="markdownTableBodyNone">[x]   </td></tr>
 </table>
+<blockquote class="doxtable">
+<p >&zwj;Just for debugging purposes the <code>assert()</code> function was also used in the code. <br  />
+ For this function to work, please comment the line <br  />
+ <code>#define NDEBUG</code> <br  />
+ and recompile and link the code, to produce a new <code>.exe</code> file. <br  />
+ You can also use <code>CyphersDBG.exe</code> included on the <b>Latest Release</b>. <br  />
+ Then, try to use negative numbers in the <code>key</code> to <b>encript</b> ou <b>decrypt</b> the text. <br  />
+ You should get an <b>assert error</b>. </p>
+</blockquote>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
